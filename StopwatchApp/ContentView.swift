@@ -23,11 +23,11 @@ struct ContentView: View {
 
                 //Create a circular button
                 HStack {
-                    CircleButtonView(buttonColour: .gray, label: "Reset", labelColour: .white)
+                    CircleButtonView(buttonColour: Color("Dark Grey"), label: "Reset", labelColour: .white)
                     
                     Spacer()
                     
-                    CircleButtonView(buttonColour: .brown, label: "Start", labelColour: .green)
+                    CircleButtonView(buttonColour: Color("Dark Green"), label: "Start", labelColour: .green)
                 }
             }
             
@@ -41,3 +41,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
