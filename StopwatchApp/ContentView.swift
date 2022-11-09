@@ -21,28 +21,13 @@ struct ContentView: View {
                     .font(Font.system(size: 90, weight: .thin))
                     .foregroundColor(.white)
 
-                //Create a circulat button
-                ZStack {
+                //Create a circular button
+                HStack {
+                    CircleButtonView(buttonColour: .gray, label: "Reset", labelColour: .white)
                     
-                    //First layer
-                    Circle()
-                        .foregroundColor(.gray)
-                    .frame(width: 100)
+                    Spacer()
                     
-                    //Second layer
-                    Circle()
-                        .foregroundColor(.black)
-                        .frame(width: 93)
-                    
-                    //Third layer
-                    Circle()
-                        .foregroundColor(.gray)
-                        .frame(width: 89)
-                    
-                    //Fourth layer
-                    Text("Reset")
-                        .foregroundColor(.white)
-                        .font(.title2)
+                    CircleButtonView(buttonColour: .brown, label: "Start", labelColour: .green)
                 }
             }
             
