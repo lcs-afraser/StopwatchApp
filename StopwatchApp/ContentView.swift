@@ -64,6 +64,10 @@ struct ContentView_Previews: PreviewProvider {
                             Text("Timer")
                         }
         }
+        //  Change the accent colour of the currently active tab item
+        .accentColor(.orange)
+        //Make tab items visible
+        .preferredColorScheme(.dark)
     }
 }
 
