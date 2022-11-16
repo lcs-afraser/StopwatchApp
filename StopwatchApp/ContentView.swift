@@ -17,6 +17,9 @@ struct ContentView: View {
             
             //Foreground
             VStack {
+                
+                Spacer()
+                
                 Text("00:09.96")
                     .font(Font.system(size: 90, weight: .thin))
                     .foregroundColor(.white)
@@ -29,6 +32,21 @@ struct ContentView: View {
                     
                     CircleButtonView(buttonColour: Color("Dark Green"), label: "Start", labelColour: .green)
                 }
+                //List of times
+                List {
+                    
+                    Group {
+                        Text("1")
+                        Text("2")
+                        Text("3")
+                        Text("4")
+                        Text("5")
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                }
+                .frame(height: 300)
+                .listStyle(.plain)
+                
             }
             
             .padding()
@@ -38,7 +56,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TabView {
+        TabView(selection: Binding.constant(3)) {
             
             Text("World Clock")
                 .tabItem {
