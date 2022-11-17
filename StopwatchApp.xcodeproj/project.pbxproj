@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E39803A2926730800F70E1C /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3980392926730800F70E1C /* TimerView.swift */; };
+		6E39803C2926815600F70E1C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E39803B2926815600F70E1C /* CircularProgressView.swift */; };
 		6ED76B59291BED5800C3152E /* StopwatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED76B58291BED5800C3152E /* StopwatchAppApp.swift */; };
 		6ED76B5B291BED5800C3152E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED76B5A291BED5800C3152E /* ContentView.swift */; };
 		6ED76B5D291BED5A00C3152E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED76B5C291BED5A00C3152E /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E3980392926730800F70E1C /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		6E39803B2926815600F70E1C /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		6ED76B55291BED5800C3152E /* StopwatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopwatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED76B58291BED5800C3152E /* StopwatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchAppApp.swift; sourceTree = "<group>"; };
 		6ED76B5A291BED5800C3152E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,7 +59,9 @@
 			children = (
 				6ED76B58291BED5800C3152E /* StopwatchAppApp.swift */,
 				6ED76B5A291BED5800C3152E /* ContentView.swift */,
+				6E3980392926730800F70E1C /* TimerView.swift */,
 				6ED76B66291BF32B00C3152E /* CircleButtonView.swift */,
+				6E39803B2926815600F70E1C /* CircularProgressView.swift */,
 				6ED76B5C291BED5A00C3152E /* Assets.xcassets */,
 				6ED76B5E291BED5A00C3152E /* Preview Content */,
 			);
@@ -142,6 +148,8 @@
 			files = (
 				6ED76B67291BF32B00C3152E /* CircleButtonView.swift in Sources */,
 				6ED76B5B291BED5800C3152E /* ContentView.swift in Sources */,
+				6E39803A2926730800F70E1C /* TimerView.swift in Sources */,
+				6E39803C2926815600F70E1C /* CircularProgressView.swift in Sources */,
 				6ED76B59291BED5800C3152E /* StopwatchAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

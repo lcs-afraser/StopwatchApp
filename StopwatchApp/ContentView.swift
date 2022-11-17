@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-          
+            
             //Background
             Color.black
                 .ignoresSafeArea()
@@ -23,7 +23,7 @@ struct ContentView: View {
                 Text("00:09.96")
                     .font(Font.system(size: 90, weight: .thin))
                     .foregroundColor(.white)
-
+                
                 //Create a circular button
                 HStack {
                     CircleButtonView(buttonColour: Color("Dark Grey"), label: "Reset", labelColour: .white)
@@ -33,14 +33,45 @@ struct ContentView: View {
                     CircleButtonView(buttonColour: Color("Dark Green"), label: "Start", labelColour: .green)
                 }
                 //List of times
+                
                 List {
-                    
                     Group {
-                        Text("1")
-                        Text("2")
-                        Text("3")
-                        Text("4")
-                        Text("5")
+                        HStack {
+                            Text("Lap 5")
+                                .font(.title2)
+                            Spacer()
+                            Text("00:00.98")
+                        }
+                        .listRowSeparator(.hidden)
+                        HStack {
+                            Text("Lap 4")
+                                .foregroundColor(Color.red)
+                                .font(.title2)
+                            Spacer()
+                            Text("00:04.08")
+                        }
+                        .listRowSeparatorTint(.gray)
+                        HStack {
+                        Text("Lap 3")
+                            .foregroundColor(Color.green)
+                            .font(.title2)
+                        Spacer()
+                        Text("00:00.96")
+                    }
+                        HStack {
+                        Text("Lap 2")
+                            .font(.title2)
+                        Spacer()
+                        Text("00:02.76")
+                    }
+                        .listRowSeparator(.hidden)
+                    HStack {
+                        Text("Lap 1")
+                            .font(.title2)
+                    Spacer()
+                    Text("00:01.16")
+                }
+                    .listRowSeparatorTint(.gray)
                     }
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
@@ -70,17 +101,17 @@ struct ContentView_Previews: PreviewProvider {
                     Text("Alarm")
                     
                 }
-                    ContentView()
-                        .tabItem {
-                            Image(systemName: "stopwatch.fill")
-                            Text("Stopwatch")
-                        }
-                    
+            ContentView()
+                .tabItem {
+                    Image(systemName: "stopwatch.fill")
+                    Text("Stopwatch")
+                }
+            
+            TimerView()
+                .tabItem {
+                    Image(systemName: "timer")
                     Text("Timer")
-                        .tabItem {
-                            Image(systemName: "timer")
-                            Text("Timer")
-                        }
+                }
         }
         //  Change the accent colour of the currently active tab item
         .accentColor(.orange)
